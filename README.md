@@ -1,5 +1,4 @@
-# CTF-OverTheWire-Bandit-Wargames
-# OverTheWire Bandit Challenges 🛡️
+# Capture The Flag OverTheWire Bandit Challenges 🛡️
 
 ## Challenge Overview
 This repository contains solutions for the **OverTheWire Bandit cybersecurity challenges**, starting from **Level 0**.
