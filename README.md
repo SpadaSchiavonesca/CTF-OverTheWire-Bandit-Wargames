@@ -10,7 +10,7 @@ This document outlines my successful completion of **Bandit Level 0** from the O
 
 ## Challenge Overview: OverTheWire Bandit 🚩
 
-**OverTheWire Bandit** provides a series of progressively challenging levels that teach Linux command-line expertise and core cybersecurity concepts. Starting from Level 0, the challenges are designed to be beginner-friendly and gradually introduce more complex topics.
+**OverTheWire Bandit** provides a series of progressively challenging levels that teach Linux command-line expertise and core cybersecurity concepts. Starting from Level 0, the challenges are designed to be beginner-friendly and gradually introduce more complex topics. You can find more information about Bandit Level 0 [here](https://overthewire.org/wargames/bandit/bandit0.html).
 
 **Level 0 Objective:** Establish a secure SSH connection to the Bandit game server.
 
