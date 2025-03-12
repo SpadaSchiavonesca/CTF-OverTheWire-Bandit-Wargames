@@ -1,28 +1,20 @@
 # Capture The Flag OverTheWire Bandit Challenges 🛡️
 
 ## Challenge Overview
-This repository contains solutions for the **OverTheWire Bandit cybersecurity challenges**, starting from **Level 0**.
+This repository documents my journey through the **OverTheWire Bandit cybersecurity challenges**, starting from **Level 0**. These capture-the-flag (CTF) exercises are designed to enhance Linux command-line and cybersecurity skills.
 
-### 🏆 Bandit Level 0
+---
+
+## Instructions 📜
+For the official challenge instructions, visit the [OverTheWire Bandit Instructions](https://overthewire.org/wargames/bandit/bandit0.html).
+
+---
+
+## 🏆 Bandit Level 0
 **Goal**: Connect to the game server using SSH.
 
-#### **Steps:**
+### Steps:
 1. Open a terminal.
-2. Run:
+2. Run the following SSH command to connect to the Bandit server:
    ```bash
    ssh bandit0@bandit.labs.overthewire.org -p 2220
-   ```
-3. Enter the password: `bandit0` (provided for Level 0).
-
-#### **Terminal Screenshot**
-![Successful Connection](images/terminal_output_level0.png)
-
-## Learnings
-- Learned basic SSH connection commands.
-- Understood how remote servers and ports work.
-
-## Next Steps
-Onwards to Level 1 and beyond! 🔥
-
-## About Bandit
-For more info, visit the [OverTheWire Bandit Game](https://overthewire.org/wargames/bandit/).
