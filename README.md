@@ -105,7 +105,7 @@ Here are the steps I took to successfully complete Bandit Level 1:
 
 ## 📸 Visual Guide: Terminal Showing Bandit Level 0 MOTD & Password Location
 
-![Terminal Showing Bandit Level 0 MOTD with Password Highlighted](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-39-03.png?raw=true)
+![Terminal Showing Bandit Level 0 MOTD with Password Highlighted](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png)
 <center>*(This screenshot visually highlights the "message of the day" (motd) displayed upon successful login to Bandit Level 0. **The password for Bandit Level 1 is embedded within this motd.** Look for the line indicating the password for "the next level bandit1".)*</center>
 
 -----
