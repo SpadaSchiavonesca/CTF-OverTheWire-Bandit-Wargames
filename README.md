@@ -479,27 +479,25 @@ Completing Bandit Level 5 using `find` and `grep` showcases significantly enhanc
   * **Efficient Problem Solving:**  Employed a more efficient and direct approach to solving the challenge compared to manual permission analysis, highlighting adaptability and optimization in problem-solving.
   * **Advanced Command-Line Fluency:**  Showcased a more advanced level of command-line fluency and the ability to construct complex commands for targeted tasks.
 
------
+---
 
------
+## 🚀 Next Steps: Level 6 and Beyond - Continuing the Bandit Journey Independently! 🚀
 
-## 🚀 Next Steps: Level 6 and Beyond - Continuing the Bandit Journey Independently\!
+Congratulations! We have successfully completed the guided project for OverTheWire Bandit Levels 0-5!
 
-Congratulations\! We have successfully completed the guided project for OverTheWire Bandit Levels 0-5\!
-
-Having mastered these foundational levels, you are now well-prepared to tackle **Bandit Level 6 and continue your OverTheWire Bandit journey independently\!** The skills you've acquired – SSH, file system navigation, basic security concepts, and efficient command-line tools – will be crucial as you progress through the more advanced challenges that lie ahead.
+Having mastered these foundational levels, you are now well-prepared to tackle **Bandit Level 6** and continue your OverTheWire Bandit journey independently! The skills you've acquired – SSH, file system navigation, basic security concepts, and efficient command-line tools – will be crucial as you progress through the more advanced challenges that lie ahead.
 
 Remember to continue applying the problem-solving strategies, attention to detail, and command-line expertise you've developed. Level 6 and beyond will further refine your cybersecurity skillset and command-line proficiency, pushing you towards more advanced and exciting security concepts.
 
-Good luck with Bandit Level 6 and the rest of the Bandit wargame\! The skills and knowledge you gain will be invaluable in your cybersecurity learning path\! 🔥
+Good luck with Bandit Level 6 and the rest of the Bandit wargame! The skills and knowledge you gain will be invaluable in your cybersecurity learning path! 🔥
 
------
+---
 
-## ✅ Completion Proof: Passwords for Levels 0-5
+## ✅ Completion Proof: Passwords for Levels 0-5 ✅
 
-![Passwords for Bandit Levels 0-5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot%202025-03-12%20131906.png)
-<center>*(Screenshot confirming successful completion of Bandit Levels 0-5 by displaying the passwords obtained.)*</center>
+<div align="center">
+  <img src="https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot%202025-03-12%20131906.png" alt="Passwords for Bandit Levels 0-5" style="max-width:80%;" />
+  <p style="font-style: italic;">(Screenshot confirming successful completion of Bandit Levels 0-5 by displaying the passwords obtained.)</p>
+</div>
 
------
-
------
+---
