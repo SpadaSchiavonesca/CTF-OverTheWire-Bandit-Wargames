@@ -301,3 +301,97 @@ Completing Bandit Level 3 further developed my Linux command-line skills and dem
 Equipped with the ability to uncover hidden files and directories, I am now ready to advance to Bandit Level 4 and further explore the OverTheWire Bandit challenges\!  Each level is enhancing my cybersecurity knowledge and command-line proficiency. Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+# 🛡️ OverTheWire Bandit CTF - Level 4: Finding the Right File Type 🔍
+
+## Expanding File System Skills: Identifying Files by Type
+
+Continuing my progression through the Bandit challenges, this document details my completion of **Bandit Level 4**. This level further develops **file system skills** by requiring the use of the `file` command to **identify files based on their type**. This is a fundamental skill in system administration and security analysis for understanding and categorizing different data formats.
+
+-----
+
+## Challenge Overview: File Type Identification 🚩
+
+**OverTheWire Bandit** Level 4 builds upon previous file system navigation skills by introducing the concept of file types. The challenge requires using the `file` command to differentiate between various file types and locate a specific file type containing the password for the next level.
+
+**Level 4 Objective:** In the `bandit4` user's home directory, there's a directory named `inhere`.  Within `inhere`, there are multiple files. Identify the one file that is of type "text" (ASCII text) and read its contents to obtain the password for Bandit Level 5.
+
+-----
+
+## ✅ Steps to Complete Bandit Level 4
+
+Here are the steps I took to successfully complete Bandit Level 4:
+
+1.  **Establish SSH Connection to Bandit Level 4:** Log in to the Bandit server as user `bandit4`.  *(Password for `bandit4` is obtained from Bandit Level 3 - refer to Level 3 documentation.)*
+
+    ```bash
+    ssh bandit4@bandit.labs.overthewire.org -p 2220
+    ```
+
+2.  **List Files and Directories in Home Directory (`ls -a` command):** Once logged in, I used `ls -a` to see all files and directories.  This revealed a directory named `inhere`.
+
+    ```bash
+    ls -a
+    ```
+
+3.  **Navigate to the `inhere` Directory (`cd inhere` command):** I used the `cd inhere` command to change my current directory to the `inhere` directory.
+
+    ```bash
+    cd inhere
+    ```
+
+4.  **List Files in `inhere` Directory (`ls -l` command):**  Inside the `inhere` directory, I used `ls -l` to get a detailed listing of all files. This showed files named `-file00`, `-file01`, ..., `-file09`.
+
+    ```bash
+    ls -l
+    ```
+
+5.  **Determine File Types (`file ./-file*` command):** To determine the type of each file, I used the `file` command with a wildcard `./-file*` to check all files starting with `-file`. The `./` is important to specify that the files are in the current directory due to the filenames starting with `-`.
+
+    ```bash
+    file ./-file*
+    ```
+    *(This command examines each file and outputs its file type.)*
+
+6.  **Identify the "ASCII text" File:**  From the output of the `file` command, I scanned the results to identify the file that was reported as "ASCII text".  In this case, it was `-file07`.
+
+7.  **Read the Password File (`cat ./-file07` command):**  Once I identified `-file07` as the ASCII text file, I used the `cat` command to read its contents.  Again, `./` is used before `-file07` because of the leading hyphen in the filename.
+
+    ```bash
+    cat ./-file07
+    ```
+
+8.  **Extract Bandit Level 5 Password:** The `cat` command displayed the password for Bandit Level 5, which I carefully noted.
+
+9.  **Logout (Optional):** Used the `exit` command to close the SSH connection.
+
+    ```bash
+    exit
+    ```
+
+-----
+
+## 📸 Visual Guide: Terminal Showing File Type Identification in Level 4
+
+![Terminal Showing File Type Identification for Bandit Level 4](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-49-21.png?raw=true)
+![Terminal Showing File Type Identification for Bandit Level 4](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-51-58.png?raw=true)
+<center>*(Screenshot demonstrating the process of listing files, navigating to the `inhere` directory, listing files within `inhere`, and crucially, using the `file` command to identify the file type of each `-fileXX` file. The output of `file ./-file*` clearly shows `-file07` as "ASCII text".)*</center>
+
+-----
+
+## 🔑 Key Learnings & Skills Demonstrated in Level 4
+
+Completing Bandit Level 4 significantly expanded my Linux command-line skills and demonstrated:
+
+  * **File Type Identification:** Successfully used the `file` command to determine the type of various files.  This is a vital skill for system analysis, security, and scripting.
+  * **Advanced File System Navigation:**  Practiced navigating directories using `cd` and listing files using `ls -a` and `ls -l` in a more complex scenario with multiple files.
+  * **Understanding Filenames with Special Characters:**  Learned how to handle filenames starting with hyphens (`-`) by using `./` to correctly reference them in commands.
+  * **Command Combination for Problem Solving:**  Effectively combined `ls`, `cd`, `file`, and `cat` commands in a logical sequence to solve the challenge.
+  * **Progressive Skill Development:**  Continued to build upon previously learned skills, adding file type identification to my growing command-line toolkit.
+
+-----
+
+## 🚀 Next Steps: Level 5 and Beyond\!
+
+With the ability to identify file types and navigate more complex file structures, I am now well-prepared to advance to Bandit Level 5 and continue my learning journey through the OverTheWire Bandit challenges\! Each level further enhances my cybersecurity and Linux command-line expertise. Stay tuned for more updates on my CTF progress\! 🔥
+
+-----
