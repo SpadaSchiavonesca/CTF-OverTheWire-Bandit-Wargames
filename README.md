@@ -1,4 +1,5 @@
-# 🛡️ OverTheWire Bandit CTF - Level 0: SSH Connection Success 🚀
+# OverTheWire Bandit Challenges 🛡️
+#🛡️ OverTheWire Bandit CTF - Level 0: SSH Connection Success 🚀
 
 ## Demonstrating Foundational Cybersecurity Skills
 
