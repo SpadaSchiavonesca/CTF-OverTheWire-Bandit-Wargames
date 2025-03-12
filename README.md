@@ -481,6 +481,7 @@ Completing Bandit Level 5 using `find` and `grep` showcases significantly enhanc
 
 ---
 
+
 ## 🚀 Next Steps: Level 6 and Beyond - Continuing the Bandit Journey Independently! 🚀
 
 Congratulations! We have successfully completed the guided project for OverTheWire Bandit Levels 0-5!
@@ -495,7 +496,7 @@ Good luck with Bandit Level 6 and the rest of the Bandit wargame! The skills and
 
 ## ✅ Completion Proof: Passwords for Levels 0-5 ✅
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot%202025-03-12%20131906.png" alt="Passwords for Bandit Levels 0-5" style="max-width:80%;" />
   <p style="font-style: italic;">(Screenshot confirming successful completion of Bandit Levels 0-5 by displaying the passwords obtained.)</p>
 </div>
