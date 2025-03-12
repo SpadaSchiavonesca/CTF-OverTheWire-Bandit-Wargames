@@ -36,10 +36,10 @@ Here are the steps I took to successfully complete Bandit Level 0:
 
 -----
 
-## 📸 Visual Evidence: Terminal Showing SSH Command & Connection Attempt
+## 📸 Visual Guide: Terminal Showing SSH Command & Connection Attempt
 
 ![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?raw=true)
-*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*
+<center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
 
 -----
 
@@ -59,3 +59,4 @@ Completing Bandit Level 0 provided valuable foundational learning and demonstrat
 Excited to continue progressing through the OverTheWire Bandit challenges\! Level 1 and beyond will further develop my cybersecurity skillset and command-line expertise. Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+
