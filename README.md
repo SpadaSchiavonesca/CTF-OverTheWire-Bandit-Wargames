@@ -210,3 +210,91 @@ Completing Bandit Level 2 significantly enhanced my Linux command-line skills an
 Having successfully navigated filenames with spaces in Level 2, I am eager to progress to Level 3 and continue expanding my Linux command-line and cybersecurity skillset through the OverTheWire Bandit challenges\! Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+# 🛡️ OverTheWire Bandit CTF - Level 3: Discovering Hidden Files 🕵️‍♂️
+
+## Expanding File System Skills: Unveiling Hidden Directories
+
+Building upon file system navigation and password authentication, this document details my completion of **Bandit Level 3**.  This level focuses on expanding **file system exploration skills** to discover **hidden directories and files**, a common technique in cybersecurity to conceal sensitive information and test a user's ability to thoroughly investigate a system.
+
+-----
+
+## Challenge Overview: Uncovering Hidden Content 🚩
+
+**OverTheWire Bandit** continues its progressive approach to teaching Linux command-line and cybersecurity skills. Level 3 challenges participants to go beyond basic file listings and utilize specific command options to reveal hidden content within the Linux file system.
+
+**Level 3 Objective:** Locate a hidden directory within the `bandit3` user's home directory, and within it, find and read a file to obtain the password for Bandit Level 4.
+
+-----
+
+## ✅ Steps to Complete Bandit Level 3
+
+Here are the steps I took to successfully complete Bandit Level 3:
+
+1.  **Establish SSH Connection to Bandit Level 3:** Log in to the Bandit server as user `bandit3`.  *(Password for `bandit3` is obtained from Bandit Level 2 - refer to Level 2 documentation.)*
+
+    ```bash
+    ssh bandit3@bandit.labs.overthewire.org -p 2220
+    ```
+
+2.  **List All Files and Directories, Including Hidden Ones (`ls -a` command):** Once logged in, I used the `ls -a` command. The `-a` option is crucial as it instructs `ls` to display *all* entries in the directory, including hidden files and directories (those whose names begin with a dot `.`).
+
+    ```bash
+    ls -a
+    ```
+
+3.  **Identify the Hidden Directory:** By examining the output of `ls -a`, I looked for directory names starting with a dot (`.`). I identified the hidden directory name. *(The specific name is part of the challenge.)*
+
+4.  **Navigate to the Hidden Directory (`cd` command):** I used the `cd` command to change my current directory to the hidden directory found in the previous step.
+
+    ```bash
+    cd [hidden_directory_name]
+    ```
+    *(Replace `[hidden_directory_name]` with the actual name of the hidden directory.)*
+
+5.  **List Files in the Hidden Directory (`ls` command):**  Within the hidden directory, I used `ls` to list its contents and identify the file containing the password.
+
+    ```bash
+    ls
+    ```
+
+6.  **Read the Password File (`cat` command):** Finally, I used the `cat` command to read the contents of the file found within the hidden directory. This file contained the password for Bandit Level 4.
+
+    ```bash
+    cat [password_filename]
+    ```
+    *(Replace `[password_filename]` with the actual filename containing the password.)*
+
+7.  **Extract Bandit Level 4 Password:** The `cat` command displayed the Bandit Level 4 password, which I then noted for the next level.
+
+8.  **Logout (Optional):**  Used the `exit` command to close the SSH connection.
+
+    ```bash
+    exit
+    ```
+
+-----
+
+## 📸 Visual Guide: Terminal Showing SSH Login Attempt to Bandit Level 3
+
+![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-24-33.png?raw=true)
+<center>*(Screenshot showing the initial SSH login attempt to Bandit Level 3.  This might show the password prompt or a "Connection closed" message if the password was incorrect, as seen in this example.)*</center>
+
+-----
+
+## 🔑 Key Learnings & Skills Demonstrated in Level 3
+
+Completing Bandit Level 3 further developed my Linux command-line skills and demonstrated:
+
+  * **Hidden File Discovery:**  Successfully utilized the `ls -a` command to reveal and identify hidden files and directories, a critical skill in Linux security and system administration.
+  * **File System Navigation:**  Continued to practice and refine file system navigation using `ls` and `cd` commands.
+  * **Command-Line Options:** Learned the importance and usage of command-line options like `-a` to modify command behavior and reveal more information.
+  * **Problem-Solving Strategies:**  Applied a systematic approach to exploring the file system and locating the hidden password, building problem-solving skills in a CTF context.
+  * **Progressive Learning:**  Demonstrated continued progression through the Bandit challenges, building upon skills from previous levels.
+
+-----
+
+## 🚀 Next Steps: Level 4 and Beyond\!
+
+Equipped with the ability to uncover hidden files and directories, I am now ready to advance to Bandit Level 4 and further explore the OverTheWire Bandit challenges\!  Each level is enhancing my cybersecurity knowledge and command-line proficiency. Stay tuned for more updates on my CTF journey\! 🔥
+
+-----
