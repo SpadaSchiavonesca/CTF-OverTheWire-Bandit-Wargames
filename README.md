@@ -4,7 +4,7 @@
 
 ## Demonstrating Foundational Cybersecurity Skills
 
-This document outlines my successful completion of **Bandit Level 0** from the OverTheWire Capture The Flag (CTF) challenges. OverTheWire Bandit is a fantastic resource for learning essential cybersecurity and Linux command-line skills in a gamified environment.  This level focused on establishing a fundamental skill for any cybersecurity professional: **connecting to remote servers securely via SSH.**
+This document outlines my successful completion of **Bandit Level 0** from the OverTheWire Capture The Flag (CTF) challenges. OverTheWire Bandit is a fantastic resource for learning essential cybersecurity and Linux command-line skills in a gamified environment.  This level focused on establishing a fundamental skill for any cybersecurity professional: **connecting to remote servers securely via SSH.**
 
 -----
 
@@ -40,9 +40,8 @@ Here are the steps I took to successfully complete Bandit Level 0:
 
 ## 📸 Visual Guide: Terminal Showing SSH Command & Connection Attempt
 
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?.pngraw=true)
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png?.pngraw=true)
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-07-11.png?.pngraw=true)
+![Terminal Showing SSH Command & Connection Attempt](about:sanitized)
+
 <center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
 
 -----
@@ -63,6 +62,7 @@ Completing Bandit Level 0 provided valuable foundational learning and demonstrat
 Excited to continue progressing through the OverTheWire Bandit challenges\! Level 1 and beyond will further develop my cybersecurity skillset and command-line expertise. Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+
 # 🛡️ OverTheWire Bandit CTF - Level 1: Logging into Bandit1 🔑
 
 ## Building on Foundational SSH Skills & Introducing Password Authentication
@@ -91,7 +91,7 @@ Here are the steps I took to successfully complete Bandit Level 1:
 
 2.  **Examine the "Message of the Day" (motd):** Carefully read the output displayed in the terminal after connecting to Bandit Level 0.  *(The motd is the server's welcome message and often contains important information in CTFs.)*
 
-3.  **Locate the Bandit1 Password:** Within the Bandit Level 0 motd, identify the line that explicitly states the password for the *next* level (Bandit Level 1).  *(Look for text similar to: "Password for the next level bandit1 is: [your_password]")*
+3.  **Locate the Bandit1 Password:** Within the Bandit Level 0 motd, identify the line that explicitly states the password for the *next* level (Bandit Level 1).  *(Look for text similar to: "Password for the next level bandit1 is: [your\_password]")*
 
 4.  **Open a New Terminal or SSH Session (Recommended):** Open a new terminal window or start a fresh SSH session to avoid confusion and clearly separate the Level 1 login attempt.
 
@@ -109,11 +109,9 @@ Here are the steps I took to successfully complete Bandit Level 1:
 
 ## 📸 Visual Guide: Terminal Showing Bandit Level 1 MOTD & Password Location
 
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-10-25.png?.pngraw=true)
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-10-54.png?.pngraw=true)
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-14-08.png?.pngraw=true)
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-14-27.png?.pngraw=true)
-<center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
+![Terminal Showing Bandit Level 1 MOTD & Password Location](about:sanitized)
+
+<center>*(Screenshot visually highlighting the Bandit Level 0 "message of the day" (motd) where the password for Bandit Level 1 is displayed. Look for text similar to "Password for the next level: [Bandit1 Password]".)*</center>
 
 -----
 
@@ -134,6 +132,7 @@ Completing Bandit Level 1 expanded my foundational cybersecurity knowledge and d
 With successful login to Bandit Level 1, I am now prepared to advance to Level 2 and continue my learning journey through the OverTheWire Bandit challenges\!  Each level is progressively building my cybersecurity skills and Linux command-line expertise. Stay tuned for more updates on my CTF progress\! 🔥
 
 -----
+
 # 🛡️ OverTheWire Bandit CTF - Level 2: Accessing Files with Spaces 📂
 
 ## Mastering Basic File System Navigation and Handling Special Characters
@@ -165,6 +164,7 @@ Here are the steps I took to successfully complete Bandit Level 2:
     ```bash
     ls
     ```
+
     *(This command reveals the contents of the current directory, allowing identification of the target file.)*
 
 3.  **Identify the File with Spaces:** From the output of the `ls` command, identified the filename "spaces in this filename".  *(Note the spaces within the filename, which require special handling in the command line.)*
@@ -174,6 +174,7 @@ Here are the steps I took to successfully complete Bandit Level 2:
     ```bash
     cat spaces\ in\ this\ filename
     ```
+
     *(The backslashes escape the spaces, preventing the shell from interpreting "spaces", "in", "this", and "filename" as separate arguments.)*
 
 5.  **Extract Bandit Level 3 Password:** The output of the `cat` command displayed the password for Bandit Level 3.  Carefully copied or noted down this password.
@@ -188,7 +189,8 @@ Here are the steps I took to successfully complete Bandit Level 2:
 
 ## 📸 Visual Guide: Terminal Showing File Listing and Reading with `cat`
 
-![Terminal Showing File Listing and Reading "spaces in this filename"](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-17-14.png?raw=true)
+![Terminal Showing File Listing and Reading "spaces in this filename"](about:sanitized)
+
 <center>*(Screenshot illustrating the use of the `ls` command to list files, identifying "spaces in this filename", and then using the `cat` command with backslash escaping to read the file's contents and reveal the Bandit Level 3 password.)*</center>
 
 -----
@@ -210,6 +212,7 @@ Completing Bandit Level 2 significantly enhanced my Linux command-line skills an
 Having successfully navigated filenames with spaces in Level 2, I am eager to progress to Level 3 and continue expanding my Linux command-line and cybersecurity skillset through the OverTheWire Bandit challenges\! Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+
 # 🛡️ OverTheWire Bandit CTF - Level 3: Discovering Hidden Files 🕵️‍♂️
 
 ## Expanding File System Skills: Unveiling Hidden Directories
@@ -249,6 +252,7 @@ Here are the steps I took to successfully complete Bandit Level 3:
     ```bash
     cd [hidden_directory_name]
     ```
+
     *(Replace `[hidden_directory_name]` with the actual name of the hidden directory.)*
 
 5.  **List Files in the Hidden Directory (`ls` command):**  Within the hidden directory, I used `ls` to list its contents and identify the file containing the password.
@@ -262,6 +266,7 @@ Here are the steps I took to successfully complete Bandit Level 3:
     ```bash
     cat [password_filename]
     ```
+
     *(Replace `[password_filename]` with the actual filename containing the password.)*
 
 7.  **Extract Bandit Level 4 Password:** The `cat` command displayed the Bandit Level 4 password, which I then noted for the next level.
@@ -276,10 +281,8 @@ Here are the steps I took to successfully complete Bandit Level 3:
 
 ## 📸 Visual Guide: Terminal Showing SSH Login Attempt to Bandit Level 3
 
-![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-24-33.png?raw=true)
-![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-25-48.png?raw=true)
-![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-31-57.png?raw=true)
-![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-33-44.png?raw=true)
+![Terminal Showing SSH Login Attempt to Bandit Level 3](about:sanitized)
+
 <center>*(Screenshot showing the initial SSH login attempt to Bandit Level 3.  This might show the password prompt or a "Connection closed" message if the password was incorrect, as seen in this example.)*</center>
 
 -----
@@ -301,6 +304,7 @@ Completing Bandit Level 3 further developed my Linux command-line skills and dem
 Equipped with the ability to uncover hidden files and directories, I am now ready to advance to Bandit Level 4 and further explore the OverTheWire Bandit challenges\!  Each level is enhancing my cybersecurity knowledge and command-line proficiency. Stay tuned for more updates on my CTF journey\! 🔥
 
 -----
+
 # 🛡️ OverTheWire Bandit CTF - Level 4: Finding the Right File Type 🔍
 
 ## Expanding File System Skills: Identifying Files by Type
@@ -350,6 +354,7 @@ Here are the steps I took to successfully complete Bandit Level 4:
     ```bash
     file ./-file*
     ```
+
     *(This command examines each file and outputs its file type.)*
 
 6.  **Identify the "ASCII text" File:**  From the output of the `file` command, I scanned the results to identify the file that was reported as "ASCII text".  In this case, it was `-file07`.
@@ -372,8 +377,8 @@ Here are the steps I took to successfully complete Bandit Level 4:
 
 ## 📸 Visual Guide: Terminal Showing File Type Identification in Level 4
 
-![Terminal Showing File Type Identification for Bandit Level 4](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-49-21.png?raw=true)
-![Terminal Showing File Type Identification for Bandit Level 4](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-51-58.png?raw=true)
+![Terminal Showing File Type Identification for Bandit Level 4](about:sanitized)
+
 <center>*(Screenshot demonstrating the process of listing files, navigating to the `inhere` directory, listing files within `inhere`, and crucially, using the `file` command to identify the file type of each `-fileXX` file. The output of `file ./-file*` clearly shows `-file07` as "ASCII text".)*</center>
 
 -----
@@ -395,6 +400,7 @@ Completing Bandit Level 4 significantly expanded my Linux command-line skills an
 With the ability to identify file types and navigate more complex file structures, I am now well-prepared to advance to Bandit Level 5 and continue my learning journey through the OverTheWire Bandit challenges\! Each level further enhances my cybersecurity and Linux command-line expertise. Stay tuned for more updates on my CTF progress\! 🔥
 
 -----
+
 # 🛡️ OverTheWire Bandit CTF - Level 5: Efficient Password Hunting with `find` and `grep` 🚀
 
 ## Mastering File Searching: Utilizing `find` and `grep` for Targeted Information Retrieval
@@ -434,12 +440,13 @@ Here are the steps I took to efficiently complete Bandit Level 5 using `find` an
     ```
 
     Let's break down this command:
-    *   `find .`:  Starts the `find` command, searching in the current directory (`.`) and its subdirectories.
-    *   `-type f`:  Specifies to only look for files (not directories).
-    *   `-size 1033c`:  Filters for files that are exactly 1033 bytes in size (`c` for bytes).
-    *   `! -executable`:  Filters out executable files (files that are *not* executable).
-    *   `-exec file {} +`:  For each file that matches the previous criteria, executes the `file` command to determine its file type.  `{}` is a placeholder for the found files, and `+` optimizes execution.
-    *   `| grep "ASCII text"`:  Pipes the output of the `find ... -exec file ...` command to `grep`, which filters for lines containing "ASCII text".
+
+      * `find .`:  Starts the `find` command, searching in the current directory (`.`) and its subdirectories.
+      * `-type f`:  Specifies to only look for files (not directories).
+      * `-size 1033c`:  Filters for files that are exactly 1033 bytes in size (`c` for bytes).
+      * `! -executable`:  Filters out executable files (files that are *not* executable).
+      * `-exec file {} +`:  For each file that matches the previous criteria, executes the `file` command to determine its file type.  `{}` is a placeholder for the found files, and `+` optimizes execution.
+      * `| grep "ASCII text"`:  Pipes the output of the `find ... -exec file ...` command to `grep`, which filters for lines containing "ASCII text".
 
 4.  **Identify the Password File Path:** The output of the combined `find` and `grep` command directly revealed the path to the password file: `./maybehere07/.file2: ASCII text, with very long lines (1000)`. This tells us the file is `.file2` located in the `maybehere07` directory within the current directory (`inhere`).
 
@@ -461,9 +468,8 @@ Here are the steps I took to efficiently complete Bandit Level 5 using `find` an
 
 ## 📸 Visual Guide: Efficient File Search with `find` and `grep` in Level 5
 
-![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-59-57.png?raw=true)
-![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-04-50.png?raw=true)
-![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-06-39.png?raw=true)
+![Terminal Showing find and grep Command for Level 5](about:sanitized)
+
 <center>*(Screenshot demonstrating the use of the combined `find` and `grep` command to efficiently locate the password file in Bandit Level 5. The output clearly identifies `./maybehere07/.file2: ASCII text, with very long lines (1000)`, directly leading to the password file.)*</center>
 
 -----
@@ -481,8 +487,14 @@ Completing Bandit Level 5 using `find` and `grep` showcases significantly enhanc
 
 -----
 
-## 🚀 Next Steps: Level 6 and Beyond\!
+## 🚀 Next Steps: Level 6 and Beyond - Continuing the Bandit Journey Independently\!
 
-Having mastered efficient file searching with `find` and `grep`, I am exceptionally well-prepared to advance to Bandit Level 6 and continue my journey through the OverTheWire Bandit challenges\!  Each level is progressively refining my cybersecurity and Linux command-line skills, now moving towards more advanced and efficient techniques. Stay tuned for further updates on my CTF progress\! 🔥
+Congratulations\! You have successfully completed the guided project for OverTheWire Bandit Levels 0-5\!
+
+Having mastered these foundational levels, you are now well-prepared to tackle **Bandit Level 6 and continue your OverTheWire Bandit journey independently\!** The skills you've acquired – SSH, file system navigation, basic security concepts, and efficient command-line tools – will be crucial as you progress through the more advanced challenges that lie ahead.
+
+Remember to continue applying the problem-solving strategies, attention to detail, and command-line expertise you've developed.  Level 6 and beyond will further refine your cybersecurity skillset and command-line proficiency, pushing you towards more advanced and exciting security concepts.
+
+Good luck with Bandit Level 6 and the rest of the Bandit wargame\!  The skills and knowledge you gain will be invaluable in your cybersecurity learning path\! 🔥
 
 -----
