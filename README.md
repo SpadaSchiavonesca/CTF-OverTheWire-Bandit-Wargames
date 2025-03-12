@@ -38,7 +38,8 @@ Here are the steps I took to successfully complete Bandit Level 0:
 
 ## 📸 Visual Guide: Terminal Showing SSH Command & Connection Attempt
 
-![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.pngraw=true)
+![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?.pngraw=true)
+![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png?.pngraw=true)
 <center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
 
 -----
