@@ -157,7 +157,7 @@ Here are the steps I took to successfully complete Bandit Level 2:
 1.  **Establish SSH Connection to Bandit Level 2:** Log in to the Bandit server as user `bandit2`.  *(Password for `bandit2` is obtained from Bandit Level 1 - refer to Level 1 documentation.)*
 
     ```bash
-    ssh [email address removed] -p 2220
+    ssh bandit2@bandit.labs.overthewire.org -p 2220
     ```
 
 2.  **List Files in Home Directory (`ls` command):**  Once logged in, used the `ls` command to list the files and directories in the current working directory (which defaults to the `bandit2` user's home directory upon login).
@@ -188,7 +188,7 @@ Here are the steps I took to successfully complete Bandit Level 2:
 
 ## 📸 Visual Guide: Terminal Showing File Listing and Reading with `cat`
 
-![Terminal Showing File Listing and Reading "spaces in this filename"](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-46-50.png?raw=true)
+![Terminal Showing File Listing and Reading "spaces in this filename"](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-17-14.png?raw=true)
 <center>*(Screenshot illustrating the use of the `ls` command to list files, identifying "spaces in this filename", and then using the `cat` command with backslash escaping to read the file's contents and reveal the Bandit Level 3 password.)*</center>
 
 -----
