@@ -395,3 +395,94 @@ Completing Bandit Level 4 significantly expanded my Linux command-line skills an
 With the ability to identify file types and navigate more complex file structures, I am now well-prepared to advance to Bandit Level 5 and continue my learning journey through the OverTheWire Bandit challenges\! Each level further enhances my cybersecurity and Linux command-line expertise. Stay tuned for more updates on my CTF progress\! 🔥
 
 -----
+# 🛡️ OverTheWire Bandit CTF - Level 5: Efficient Password Hunting with `find` and `grep` 🚀
+
+## Mastering File Searching: Utilizing `find` and `grep` for Targeted Information Retrieval
+
+Building upon previous file system and permission concepts, this document details my completion of **Bandit Level 5** using a more efficient command-line approach.  Instead of manually analyzing directory permissions, this solution leverages the powerful combination of the `find` and `grep` commands to **directly search for the password file based on its characteristics**, demonstrating advanced command-line efficiency.
+
+-----
+
+## Challenge Overview: Targeted File Search 🚩
+
+**OverTheWire Bandit** Level 5 can be solved by analyzing permissions, as documented previously. However, this revised solution showcases a more streamlined and powerful method using `find` and `grep`. This approach highlights the versatility of the Linux command-line for targeted information retrieval within complex file structures.
+
+**Level 5 Objective:**  Within the `bandit5` user's home directory and its subdirectory `inhere`, locate a file that is *not executable*, has a *size of 1033 bytes*, and contains the string "ASCII text". Read the contents of this file to obtain the password for Bandit Level 6.
+
+-----
+
+## ✅ Steps to Complete Bandit Level 5 (Using `find` and `grep`)
+
+Here are the steps I took to efficiently complete Bandit Level 5 using `find` and `grep`:
+
+1.  **Establish SSH Connection to Bandit Level 5:** Log in to the Bandit server as user `bandit5`.  *(Password for `bandit5` is obtained from Bandit Level 4 - refer to Level 4 documentation.)*
+
+    ```bash
+    ssh bandit5@bandit.labs.overthewire.org -p 2220
+    ```
+
+2.  **Navigate to the `inhere` Directory (`cd inhere` command):**  Once logged in, I used `cd inhere` to move into the `inhere` directory, as the challenge specifies the files are located within this directory and its subdirectories.
+
+    ```bash
+    cd inhere
+    ```
+
+3.  **Utilize `find` and `grep` to Search for the Password File:**  This is the key step. I used a single, powerful command combining `find`, `exec`, `file`, and `grep` to search for the file meeting the criteria:
+
+    ```bash
+    find . -type f -size 1033c ! -executable -exec file {} + | grep "ASCII text"
+    ```
+
+    Let's break down this command:
+    *   `find .`:  Starts the `find` command, searching in the current directory (`.`) and its subdirectories.
+    *   `-type f`:  Specifies to only look for files (not directories).
+    *   `-size 1033c`:  Filters for files that are exactly 1033 bytes in size (`c` for bytes).
+    *   `! -executable`:  Filters out executable files (files that are *not* executable).
+    *   `-exec file {} +`:  For each file that matches the previous criteria, executes the `file` command to determine its file type.  `{}` is a placeholder for the found files, and `+` optimizes execution.
+    *   `| grep "ASCII text"`:  Pipes the output of the `find ... -exec file ...` command to `grep`, which filters for lines containing "ASCII text".
+
+4.  **Identify the Password File Path:** The output of the combined `find` and `grep` command directly revealed the path to the password file: `./maybehere07/.file2: ASCII text, with very long lines (1000)`. This tells us the file is `.file2` located in the `maybehere07` directory within the current directory (`inhere`).
+
+5.  **Read the Password File (`cat` command):**  Used the `cat` command with the discovered file path to read the content of the password file:
+
+    ```bash
+    cat ./maybehere07/.file2
+    ```
+
+6.  **Extract Bandit Level 6 Password:** The `cat` command displayed the password for Bandit Level 6, which I carefully noted.
+
+7.  **Logout (Optional):** Used the `exit` command to close the SSH connection.
+
+    ```bash
+    exit
+    ```
+
+-----
+
+## 📸 Visual Guide: Efficient File Search with `find` and `grep` in Level 5
+
+![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-59-57.png?raw=true)
+![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-04-50.png?raw=true)
+![Terminal Showing find and grep Command for Level 5](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_20-06-39.png?raw=true)
+<center>*(Screenshot demonstrating the use of the combined `find` and `grep` command to efficiently locate the password file in Bandit Level 5. The output clearly identifies `./maybehere07/.file2: ASCII text, with very long lines (1000)`, directly leading to the password file.)*</center>
+
+-----
+
+## 🔑 Key Learnings & Skills Demonstrated in Level 5 (Efficient `find` and `grep` Solution)
+
+Completing Bandit Level 5 using `find` and `grep` showcases significantly enhanced Linux command-line skills and demonstrated:
+
+  * **Advanced File Searching with `find`:** Mastered the use of the `find` command with multiple criteria (`-type`, `-size`, `! -executable`) to perform targeted file searches.
+  * **Text Filtering with `grep`:**  Effectively used `grep` to filter the output of another command (`file`) and extract relevant information based on text patterns ("ASCII text").
+  * **Command Piping (`|`) for Efficiency:**  Understood and utilized command piping to chain commands together (`find ... | grep ...`) for a more streamlined and efficient solution.
+  * **Combining Multiple Linux Utilities:** Demonstrated the power of combining different Linux command-line utilities (`find`, `file`, `grep`) to solve complex problems.
+  * **Efficient Problem Solving:**  Employed a more efficient and direct approach to solving the challenge compared to manual permission analysis, highlighting adaptability and optimization in problem-solving.
+  * **Advanced Command-Line Fluency:**  Showcased a more advanced level of command-line fluency and the ability to construct complex commands for targeted tasks.
+
+-----
+
+## 🚀 Next Steps: Level 6 and Beyond\!
+
+Having mastered efficient file searching with `find` and `grep`, I am exceptionally well-prepared to advance to Bandit Level 6 and continue my journey through the OverTheWire Bandit challenges\!  Each level is progressively refining my cybersecurity and Linux command-line skills, now moving towards more advanced and efficient techniques. Stay tuned for further updates on my CTF progress\! 🔥
+
+-----
