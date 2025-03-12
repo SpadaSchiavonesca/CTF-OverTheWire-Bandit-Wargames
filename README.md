@@ -2,7 +2,7 @@
 
 ## Demonstrating Foundational Cybersecurity Skills
 
-This document outlines my successful completion of **Bandit Level 0-6** from the OverTheWire Capture The Flag (CTF) challenges. OverTheWire Bandit is a fantastic resource for learning essential cybersecurity and Linux command-line skills in a gamified environment.  This level focused on establishing a fundamental skill for any cybersecurity professional: **connecting to remote servers securely via SSH.**
+This document outlines my successful completion of **Bandit Level 0** from the OverTheWire Capture The Flag (CTF) challenges. OverTheWire Bandit is a fantastic resource for learning essential cybersecurity and Linux command-line skills in a gamified environment.  This level focused on establishing a fundamental skill for any cybersecurity professional: **connecting to remote servers securely via SSH.**
 
 ---
 
@@ -27,18 +27,34 @@ Here are the steps I took to successfully complete Bandit Level 0:
     ```
     *(This command instructs SSH to connect to the username `bandit0` at the server address `bandit.labs.overthewire.org` using port `2220`.)*
 
-3.  **Acknowledge Host Key (First Connection):**  Upon the initial connection, securely acknowledged and added the server's host key to my known hosts file, ensuring future connections are verified.
+3.  **Acknowledge Host Key (First Connection - if prompted):**  Upon the initial connection, you might be prompted to acknowledge and add the server's host key.  In this case, for Bandit Level 0, it's likely you'll directly proceed.
 
-4.  **Successful Connection Established:**  Confirmed successful SSH connection upon receiving the server's welcome message (motd).
+4.  **Enter Username and Server Details:** The command automatically specifies the username (`bandit0`) and server address (`bandit.labs.overthewire.org`) and port (`2220`).
+
+5.  **Successful Connection Attempted:**  After executing the command, the terminal output will attempt to connect to the Bandit server.
 
 ---
 
-## 💻 Expected Terminal Output (Confirmation of Success)
+## 📸 Visual Evidence: Terminal Showing SSH Command & Connection Attempt
 
-The following terminal output clearly indicates a successful SSH connection to the Bandit server:
+![Terminal Showing SSH Command & Connection Attempt](images/terminal_output_level0.png)
+*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*
 
-```text
-The authenticity of host '[bandit.labs.overthewire.org]:2220 ([bandit.labs.overthewire.org]:2220)' can't be established.
-ECDSA key fingerprint is SHA256:C6CBtOx06GxsVjQ/kY6sXeR8/ST+9r4j9cQWPAo0d2w.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[bandit.labs.overthewire.org]:2220' (ECDSA) to the list of known hosts.
+-----
+
+## 🔑 Key Learnings & Skills Demonstrated
+
+Completing Bandit Level 0 provided valuable foundational learning and demonstrated the following skills relevant to cybersecurity and technical roles:
+
+  * **Fundamental SSH Usage:**  Successfully utilized the `ssh` command to initiate a remote connection attempt.
+  * **Understanding of Ports:**  Reinforced that SSH operates on specific ports (default 22, here 2220) and how to specify non-default ports using the `-p` flag.
+  * **Command-Line Proficiency:**  Reinforced basic command-line interaction, essential for Linux environments and cybersecurity tasks.
+  * **Problem-Solving in a Cybersecurity Context:** Successfully followed instructions and initiated a connection to a secure server for a cybersecurity objective.
+
+-----
+
+## 🚀 Next Steps: Level 1 and Beyond\!
+
+Excited to continue progressing through the OverTheWire Bandit challenges\! Level 1 and beyond will further develop my cybersecurity skillset and command-line expertise. Stay tuned for more updates on my CTF journey\! 🔥
+
+-----
