@@ -42,6 +42,7 @@ Here are the steps I took to successfully complete Bandit Level 0:
 
 ![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?.pngraw=true)
 ![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png?.pngraw=true)
+![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-07-11.png?.pngraw=true)
 <center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
 
 -----
@@ -106,10 +107,11 @@ Here are the steps I took to successfully complete Bandit Level 1:
 
 -----
 
-## 📸 Visual Guide: Terminal Showing Bandit Level 0 MOTD & Password Location
+## 📸 Visual Guide: Terminal Showing Bandit Level 1 MOTD & Password Location
 
-![Terminal Showing Bandit Level 0 MOTD with Password Highlighted](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png)
-<center>*(This screenshot visually highlights the "message of the day" (motd) displayed upon successful login to Bandit Level 0. **The password for Bandit Level 1 is embedded within this motd.** Look for the line indicating the password for "the next level bandit1".)*</center>
+![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-02-39.png?.pngraw=true)
+![Terminal Showing SSH Command & Connection Attempt](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-04-01.png?.pngraw=true)
+<center>*(Screenshot visually confirming the SSH command entered and the server prompting for a password, indicating a connection attempt.)*</center>
 
 -----
 
