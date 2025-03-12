@@ -279,7 +279,7 @@ Here are the steps I took to successfully complete Bandit Level 3:
 ![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-24-33.png?raw=true)
 ![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-25-48.png?raw=true)
 ![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-31-57.png?raw=true)
-![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-33-10.png?raw=true)
+![Terminal Showing SSH Login Attempt to Bandit Level 3](https://github.com/SpadaSchiavonesca/CTF-OverTheWire-Bandit-Wargames/blob/main/Screenshots/Screenshot_2025-03-11_19-33-44.png?raw=true)
 <center>*(Screenshot showing the initial SSH login attempt to Bandit Level 3.  This might show the password prompt or a "Connection closed" message if the password was incorrect, as seen in this example.)*</center>
 
 -----
