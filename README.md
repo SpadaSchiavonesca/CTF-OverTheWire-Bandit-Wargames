@@ -1,4 +1,4 @@
-# OverTheWire Bandit Challenges 🛡️
+# Capture The Flag: OverTheWire Bandit Challenges 🛡️
 
 # 🛡️ OverTheWire Bandit CTF - Level 0: SSH Connection Success 🚀
 
